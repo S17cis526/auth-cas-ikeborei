@@ -7,9 +7,16 @@ const PORT = 3000;
 
 // Requires
 var fs = require('fs');
+var https = require('https');
 var http = require('http');
 var express = require('express');
 
+//The webserver
+//var options = {
+//  key: fs.readFileSync('server.key'),
+//  cert: fs.readFileSync('server.cert')
+//}
+//var server = https.createServer(option, app);
 // The Express app
 var app = express();
 
